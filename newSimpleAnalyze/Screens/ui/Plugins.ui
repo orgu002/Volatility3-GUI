@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1108</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget QFrame {
+	border:none;
+}
+
+QWidget{
+	background-color: rgb(52, 53, 52);
+}
+
+/*VERTICAL SCROLLBAR*/
+QScrollBar:vertical {
+	border:none;
+	background-color: rgb(242, 102, 42);
+    width:14px;
+    margin:15px 0 15px 0;
+    border-radius:0px;
+}
+
+/*HANDLE BAT VERTICAL*/
+QScrollBar::handle:vertical{
+	background-color:  rgb(242, 102, 42);
+    min-height:30px;
+    border-radius:7px;
+}
+
+QScrollBar::handle:vertical:hover {
+  background-color:orange;
+}
+
+QScrollBar::handle:vertical:pressed{
+   background-color:orange;
+}
+
+/*BTN TOP -SCROLLBAR*/
+QScrollBar::sub-line:vertical {
+  border:none;
+  background-color:  rgb(242, 102, 42);
+  height:0px;
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
+  subcontrol-position:top;
+  subcontrol-origin:margin;
+}
+
+QScrollBar::sub-line:vertical:hover{
+	background-color: orange;
+}
+
+QScrollBar::sub-line:vertical:pressed{
+	background-color: orange;
+}
+
+/*BTN BOTTOM -SCROLLBAR*/
+QScrollBar::add-line:vertical {
+  border:none;
+  background-color:  rgb(242, 102, 42);
+  height:0px;
+  border-bottom-left-radius:7px;
+  border-bottom-right-radius:7px;
+  subcontrol-position:bottom;
+  subcontrol-origin:margin;
+}
+
+QScrollBar::add-line:vertical:hover{
+	background-color: orange;
+}
+
+QScrollBar::add-line:vertical:pressed{
+	background-color:orange;
+}
+
+
+/*RESET ARROW*/
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+  background:none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+  background:none;
+}
+
+
+/* HORIZONTAL SCROLLBAR*/
+QScrollBar:horizontal {
+   	border:none;
+	background-color: rgb(242, 102, 42);
+    height:14px;
+    margin:0 15px 0 15px;
+    border-radius:0px;
+}
+QScrollBar::handle:horizontal {
+    background-color:  rgb(242, 102, 42);
+    min-width:30px;
+    border-radius:7px;
+}
+
+QScrollBar::handle:horizontal:hover {
+  background-color:orange;
+}
+
+QScrollBar::handle:horizontal:pressed{
+   background-color:orange;
+}
+
+QScrollBar::add-line:horizontal {
+  border:none;
+  background-color: rgb(242, 102, 42);
+  width:15px;
+  border-bottom-right-radius:7px;
+  border-top-right-radius:7px;
+  subcontrol-position:right;
+  subcontrol-origin:margin;
+}
+
+QScrollBar::add-line:horizontal:hover{
+	background-color: orange;
+}
+
+QScrollBar::add-line:horizontal:pressed{
+	background-color:orange;
+}
+
+QScrollBar::sub-line:horizontal {
+  border:none;
+  background-color:  rgb(242, 102, 42);
+  width:15px;
+  border-bottom-left-radius:7px;
+  border-top-left-radius:7px;
+  subcontrol-position:left;
+  subcontrol-origin:margin;
+}
+
+QScrollBar::sub-line:horizontal:hover{
+	background-color:orange;
+}
+
+QScrollBar::sub-line:horizontal:pressed{
+	background-color:orange;
+}
+
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+ background:none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+ background:none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(52, 53, 52);
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="mainPluginFrame">
+      <property name="font">
+       <font>
+        <pointsize>3</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>100</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>100</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item alignment="Qt::AlignBottom">
+              <widget class="QLabel" name="label_2">
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+ color:rgb(242, 102, 42);
+}</string>
+               </property>
+               <property name="text">
+                <string>Active Plugins</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight|Qt::AlignTop">
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QFrame" name="framePluginSearch">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+      QFrame {
+        background-color: #D9D9D9;
+        border-radius: 15px;
+      }
+      QLineEdit {
+        background-color: transparent;
+        border: none;
+        padding: 5px;
+        color: black; /* Ensure text color is visible */
+        z-index: 1;  /* Ensure the text input is on top */
+      }
+    </string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLineEdit" name="lineEditPluginSearch">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="pluginScroll">
+         <property name="styleSheet">
+          <string notr="true">QScrollArea {
+	border:1px solid transparent;
+}</string>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>888</width>
+            <height>542</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

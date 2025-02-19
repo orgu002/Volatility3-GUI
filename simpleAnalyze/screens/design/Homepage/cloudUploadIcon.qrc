@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="cloudUploadIcon">
+    <file>cloudUploadIcon.png</file>
+  </qresource>
+</RCC>

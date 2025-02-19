@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="mnemonicTextLogo">
+    <file>mnemonic logo white1.png</file>
+  </qresource>
+</RCC>
